@@ -1,0 +1,35 @@
+body {
+    display: grid;
+    gap: 1rem; 
+    /* both row-gap and column-gap */
+}
+
+header,
+footer {
+    grid-template-rows: 1fr;
+    grid-column-start: 1;
+    grid-column-end: 12;
+}
+
+aside,
+nav {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+main {
+    grid-column-start: 4;
+    grid-column-end: 12;
+}
+
+#pie1,
+#pie2,
+#pie3,
+#pie4,
+#pie5,
+#pie6,
+#pie7,
+#pie8 {
+    grid-auto-rows: 2fr;
+}
+
